@@ -19,3 +19,6 @@ async def upload_csv(file: UploadFile = File(...)):
 async def chat(query: str):
     response = generate_response(query)
     return {"response": response}
+
+
+#todo
