@@ -21,4 +21,4 @@ async def chat(query: str):
     return {"response": response}
 
 
-#todo
+
