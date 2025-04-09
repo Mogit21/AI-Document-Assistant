@@ -53,6 +53,27 @@ docker build -t ai-doc-assistant .
 docker run -p 8000:8000 ai-doc-assistant '''
 
 
+http://localhost:8000/
+
+http://localhost:8000/docs for Swagger UI
+
+http://localhost:8000/redoc for ReDoc
+
+FastAPI automatically generates documentation for all your endpoints
+
+
+
+## Run Qdrant using Docker:
+
+docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
+This starts the Qdrant server on:
+
+REST API: http://localhost:6333
+
+gRPC: http://localhost:6334
+
+Then try running your FastAPI app again
+
 
 ### **Next Steps:**
 - Add a **Streamlit Dashboard**  
